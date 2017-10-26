@@ -13,7 +13,7 @@ func main() {
         SharedConfigState: session.SharedConfigEnable,
     }))
 
-    svc := sqs.New(sess)
+    svc := sqs.New(sess) // `sess`はセッション
     
     
     qURL := "https://sqs.ap-northeast-1.amazonaws.com/047827674873/Go_Queue_Test"  
