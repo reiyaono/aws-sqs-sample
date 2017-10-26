@@ -16,7 +16,7 @@ func main() {
     svc := sqs.New(sess) // `sess`はセッション
     
     
-    qURL := "https://sqs.ap-northeast-1.amazonaws.com/047827674873/Go_Queue_Test"  
+    qURL := "https://sqs.ap-northeast-1.amazonaws.com/047827674873/Go_Queue_Test2"  
     //作ったキューのURLをここに代入
 
     result, err := svc.ReceiveMessage(&sqs.ReceiveMessageInput{

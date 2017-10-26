@@ -18,7 +18,7 @@ func main() {
     svc := sqs.New(sess)
 
     result, err := svc.CreateQueue(&sqs.CreateQueueInput{
-        QueueName: aws.String("Go_Queue_Test"), //キューの名前は自分で設定
+        QueueName: aws.String("Go_Queue_Test2"), //キューの名前は自分で設定
         Attributes: map[string]*string{
             "DelaySeconds":           aws.String("60"),
             "MessageRetentionPeriod": aws.String("86400"),
